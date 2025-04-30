@@ -1,6 +1,9 @@
 {
   "name": "booksample",
   "version": "0.1.0",
+  "engine": {
+    "node": ">=18.18.0"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
