@@ -13,7 +13,7 @@ export default function SortControls({ sortKey, onSortKeyChange, sortOrder, onSo
   return (
     <div className="flex items-center gap-4">
       <Select value={sortKey} onValueChange={(value) => onSortKeyChange(value as SortKey)}>
-        <SelectTrigger className="w-[140px]">
+        <SelectTrigger className="w-[140px] !h-10 text-sm px-3 py-2 rounded-md border bg-background hover:bg-muted transition-colors whitespace-nowrap">
           <SelectValue placeholder="並び替え" />
         </SelectTrigger>
         <SelectContent>

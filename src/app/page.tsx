@@ -23,7 +23,7 @@ export default function Home() {
       <footer className="border-t border-border py-8 mt-16">
         <div className="container mx-auto px-4">
           <p className="text-center text-muted-foreground text-sm">
-            &copy; {new Date().getFullYear()} ina. All rights reserved.
+            &copy; {new Date().getFullYear()} nomon. All rights reserved.
           </p>
         </div>
       </footer>

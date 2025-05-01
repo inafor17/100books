@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://100books.nomon-o.com
+
+# Sitemaps
+Sitemap: https://100books.nomon-o.com/sitemap.xml

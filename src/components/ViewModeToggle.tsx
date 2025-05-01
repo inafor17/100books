@@ -15,10 +15,10 @@ export default function ViewModeToggle({ value, onChange }: ViewModeToggleProps)
       onValueChange={(value) => value && onChange(value as ViewMode)}
       aria-label="表示モード"
     >
-      <ToggleGroupItem value="list" aria-label="リスト表示">
+      <ToggleGroupItem value="list" aria-label="リスト表示" className="!h-10 w-10">
         <List className="h-4 w-4" />
       </ToggleGroupItem>
-      <ToggleGroupItem value="grid" aria-label="グリッド表示">
+      <ToggleGroupItem value="grid" aria-label="グリッド表示" className="!h-10 w-10">
         <LayoutGrid className="h-4 w-4" />
       </ToggleGroupItem>
     </ToggleGroup>
