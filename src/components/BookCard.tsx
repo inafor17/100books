@@ -19,9 +19,9 @@ export default function BookCard({ book }: BookCardProps) {
 
         <div className="relative">
           <div className="flex justify-between items-start mb-1">
-            <h3 className="font-mono text-lg font-semibold text-book-title group-hover:text-primary transition-colors duration-200">
+            <h2 className="font-mono text-lg font-semibold text-book-title group-hover:text-primary transition-colors duration-200">
               {book.title}
-            </h3>
+            </h2>
             {book.shoppingLink && (
               <a
                 href={book.shoppingLink}
