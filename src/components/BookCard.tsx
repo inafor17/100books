@@ -9,7 +9,11 @@ interface BookCardProps {
 export default function BookCard({ book }: BookCardProps) {
   return (
     <div className="book-card rounded-lg overflow-hidden bg-card border shadow-sm h-full flex flex-col group hover:shadow-md transition-shadow relative">
-      <Link href={`/book/${book.id}`} className="absolute inset-0 z-10" />
+      <Link 
+        href={`/book/${book.id}`} 
+        className="absolute inset-0 z-10"
+        aria-label={`${book.title}の詳細を見る`}
+      />
       <div className="p-5 flex flex-col flex-grow relative">
         <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
 
