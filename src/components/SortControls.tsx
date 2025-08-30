@@ -19,7 +19,7 @@ export default function SortControls({ sortKey, onSortKeyChange, sortOrder, onSo
         <SelectContent>
           <SelectItem value="title">表題</SelectItem>
           <SelectItem value="author">作者</SelectItem>
-          <SelectItem value="sortTimeWritten">年代</SelectItem>
+          <SelectItem value="publishedDateFrom">年代</SelectItem>
         </SelectContent>
       </Select>
       <button

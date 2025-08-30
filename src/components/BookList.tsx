@@ -18,7 +18,7 @@ interface BookListProps {
 export default function BookList({ books }: BookListProps) {
   const [viewMode, setViewMode] = useState<ViewMode>("grid");
   const [searchTerm, setSearchTerm] = useState<string>("");
-  const [sortKey, setSortKey] = useState<SortKey>("title");
+  const [sortKey, setSortKey] = useState<SortKey>("publishedDateFrom");
   const [sortOrder, setSortOrder] = useState<SortOrder>("desc");
   const [selectedBook, setSelectedBook] = useState<Book | null>(null);
 
@@ -30,13 +30,14 @@ export default function BookList({ books }: BookListProps) {
         return (
           book.title.toLowerCase().includes(searchLower) ||
           book.author.toLowerCase().includes(searchLower) ||
-          book.region.toLowerCase().includes(searchLower) ||
-          book.synopsis.toLowerCase().includes(searchLower)
+          book.country.toLowerCase().includes(searchLower) ||
+          book.language.toLowerCase().includes(searchLower) ||
+          book.summary.toLowerCase().includes(searchLower)
         );
       })
       .sort((a, b) => {
-        if (sortKey === "sortTimeWritten") {
-          return sortOrder === "asc" ? a.sortTimeWritten - b.sortTimeWritten : b.sortTimeWritten - a.sortTimeWritten;
+        if (sortKey === "publishedDateFrom") {
+          return sortOrder === "asc" ? a.publishedDateFrom - b.publishedDateFrom : b.publishedDateFrom - a.publishedDateFrom;
         }
 
         const aValue = a[sortKey].toString().toLowerCase();
