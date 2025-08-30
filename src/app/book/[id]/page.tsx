@@ -67,6 +67,7 @@ export default async function BookDetailPage({ params }: BookDetailPageProps) {
               <Link
                 href="/cards"
                 className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="カード表示一覧に戻る"
               >
                 <ArrowLeft className="h-4 w-4 flex-shrink-0" />
                 <span className="hidden sm:inline truncate">一覧に戻る</span>
@@ -135,6 +136,7 @@ export default async function BookDetailPage({ params }: BookDetailPageProps) {
               <Link
                 href="/cards"
                 className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
+                aria-label="カード表示一覧に戻る"
               >
                 <ArrowLeft className="h-4 w-4" />
                 カード表示
@@ -142,6 +144,7 @@ export default async function BookDetailPage({ params }: BookDetailPageProps) {
               <Link
                 href="/list"
                 className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
+                aria-label="リスト表示一覧に戻る"
               >
                 リスト表示
               </Link>

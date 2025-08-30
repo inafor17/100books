@@ -24,6 +24,7 @@ export default function BookListView({ books }: BookListViewProps) {
             key={book.id}
             href={`/book/${book.id}`}
             className="grid gap-4 p-4 items-start sm:[grid-template-columns:2fr_1.5fr_1fr_1fr] hover:bg-muted/50 transition-colors cursor-pointer"
+            aria-label={`${book.title}の詳細を見る`}
           >
             {/* Mobile layout */}
             <div className="sm:hidden grid grid-cols-[auto_auto] gap-x-4 w-full">
